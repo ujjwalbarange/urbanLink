@@ -78,6 +78,8 @@ data class ActiveReportModel(
     val title: String,
     val status: String = "CONFIRMED",
     val severity: String = "MEDIUM",
+    val department: String? = null,
+    val category: String? = null,
     @SerialName("createdAt") val createdAt: String? = null,
     @SerialName("created_at") val createdAtSnake: String? = null
 ) {
@@ -86,6 +88,9 @@ data class ActiveReportModel(
 
     val effectiveCreatedAt: String
         get() = createdAt ?: createdAtSnake ?: ""
+
+    val effectiveDepartment: String
+        get() = department?.takeIf { it.isNotBlank() } ?: category?.takeIf { it.isNotBlank() } ?: "Nagpur Municipal Corporation"
 }
 
 @Serializable

@@ -74,7 +74,7 @@ fun MyReportsScreen(
         reports.filter {
             it.effectiveReference.contains(searchQuery, ignoreCase = true) ||
                     it.title.contains(searchQuery, ignoreCase = true) ||
-                    it.department.contains(searchQuery, ignoreCase = true)
+                    it.effectiveDepartment.contains(searchQuery, ignoreCase = true)
         }
     }
 
@@ -334,7 +334,7 @@ private fun StitchReportHistoryCard(
                 }
                 Spacer(modifier = Modifier.width(8.dp))
                 Text(
-                    text = report.department.ifBlank { "Nagpur Municipal Corporation" },
+                    text = report.effectiveDepartment,
                     fontSize = 13.sp,
                     fontWeight = FontWeight.Bold,
                     color = CivicTheme.colors.textPrimary

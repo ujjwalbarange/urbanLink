@@ -208,3 +208,34 @@ fun PreviewEmergencyHub() {
         )
     }
 }
+
+@Preview(name = "9. My Reports History", showBackground = true, widthDp = 390, heightDp = 844)
+@Composable
+fun PreviewMyReports() {
+    NagpurConnectTheme {
+        com.nagpur.connect.ui.screens.track.MyReportsScreen(
+            reports = listOf(
+                ActiveReportModel(
+                    publicReference = "NAG-2026-000108",
+                    title = "Severe Pothole Hazard near Sitabuldi Metro Station",
+                    status = "IN_PROGRESS",
+                    severity = "HIGH",
+                    department = "Public Works Department",
+                    createdAt = "2026-10-02"
+                ),
+                ActiveReportModel(
+                    publicReference = "NAG-2026-000095",
+                    title = "Broken street light causing safety concerns on Wardha Road",
+                    status = "RESOLVED",
+                    severity = "MEDIUM",
+                    department = "Electricity & Street Lighting",
+                    createdAt = "2026-09-28"
+                )
+            ),
+            onSelectReport = {},
+            onReportNew = {},
+            onBack = {}
+        )
+    }
+}
+
