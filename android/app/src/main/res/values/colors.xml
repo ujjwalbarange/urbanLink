@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Civic Horizon Palette -->
+    <color name="civic_blue">#003D9B</color>
+    <color name="civic_blue_dark">#002868</color>
+    <color name="civic_accent">#0052CC</color>
+    <color name="civic_canvas_light">#F8F9FA</color>
+    <color name="civic_surface_light">#FFFFFF</color>
+    <color name="civic_canvas_dark">#0A0A0C</color>
+    <color name="civic_surface_dark">#111114</color>
+    <color name="critical_red">#BA1A1A</color>
+    <color name="high_orange">#C05600</color>
+    <color name="medium_yellow">#8A6D00</color>
+    <color name="low_green">#006E06</color>
+</resources>
