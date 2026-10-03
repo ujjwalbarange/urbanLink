@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Space+Grotesk:wght@600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#F8FAFC;}body{overscroll-behavior:none;font-family:'Plus Jakarta Sans',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-error-container": "#93000a", "surface-container-high": "#e2e7ff", "text-secondary": "#64748B", "on-primary": "#ffffff", "on-primary-fixed": "#00174b", "primary-fixed-dim": "#b4c5ff", "tertiary-container": "#996100", "on-tertiary": "#ffffff", "on-tertiary-fixed": "#2a1700", "secondary-container": "#6cf8bb", "primary-fixed": "#dbe1ff", "on-secondary-fixed-variant": "#005236", "emergency-bg": "#FEF2F2", "warning-bg": "#FFFBEB", "on-tertiary-container": "#ffeedd", "surface-tint": "#0053db", "surface-bright": "#faf8ff", "on-secondary-container": "#00714d", "on-error": "#ffffff", "surface-container-low": "#f2f3ff", "text-primary": "#0F172A", "on-secondary-fixed": "#002113", "background": "#faf8ff", "secondary": "#006c49", "success-bg": "#ECFDF5", "on-primary-fixed-variant": "#003ea8", "emergency-red": "#EF4444", "surface-variant": "#dae2fd", "on-background": "#131b2e", "secondary-fixed": "#6ffbbe", "secondary-fixed-dim": "#4edea3", "on-surface-variant": "#434655", "text-muted": "#94A3B8", "emergency-border": "#FCA5A5", "outline": "#737686", "primary-dark": "#1D4ED8", "surface-subtle": "#F1F5F9", "surface-container": "#eaedff", "error": "#ba1a1a", "primary": "#004ac6", "glass-border": "rgba(226, 232, 240, 0.80)", "tertiary-fixed-dim": "#ffb95f", "surface-glass": "rgba(255, 255, 255, 0.88)", "surface": "#faf8ff", "primary-container": "#2563eb", "inverse-on-surface": "#eef0ff", "error-container": "#ffdad6", "surface-dim": "#d2d9f4", "on-tertiary-fixed-variant": "#653e00", "tertiary-fixed": "#ffddb8", "surface-container-highest": "#dae2fd", "inverse-surface": "#283044", "surface-container-lowest": "#ffffff", "tertiary": "#784b00", "on-primary-container": "#eeefff", "on-surface": "#131b2e", "canvas-bg": "#F8FAFC", "on-secondary": "#ffffff", "outline-variant": "#c3c6d7", "inverse-primary": "#b4c5ff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-sm": "0.5rem", "gutter-sm": "0.75rem", "gutter": "1rem", "margin": "1rem", "space-lg": "1.25rem", "space-2xl": "2.5rem", "space-md": "1rem", "margin-lg": "1.5rem", "space-xl": "1.75rem" }, fontFamily: { "display-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "mono-ticket": ["Space Grotesk"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "display-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"] }, fontSize: { "display-lg": ["34px", { "lineHeight": "40px", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "18px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "mono-ticket": ["13px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "30px", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }], "display-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "800" }], "headline-md": ["20px", { "lineHeight": "26px", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }] } } } };</script></head><body class="bg-canvas-bg text-on-surface min-h-screen flex flex-col antialiased selection:bg-primary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-glass backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm min-w-0"><button aria-label="Go back" class="w-11 h-11 -ml-1.5 flex items-center justify-center rounded-full text-text-primary active:scale-95 transition-transform hover:bg-surface-subtle" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Urban Link Logo" class="h-7 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1W6OtN14VeH0AyfB06lyLjGoXiKp-hX_EVZi0liuAc1Yq6YZwbPK_DtHIKPJUa4yxIzfuh8-axCYE0dSd5pYiIUmRDFIUatq_5vPyxP2uMq-oIJ7WVpezXvVFdil2EMeQ8r_jZPn5lJ5hJ0Ld-Dm_qr8n5lsoVOubBI3MWPfFypDgjckQUeDYLECv4d0vFywYsBMGJ--2cCEAFiKdySXHa7aBShxRvU5MVEs3IPGud7DV6u_E-h_liS7--d"/><h1 class="font-headline-sm text-headline-sm text-text-primary truncate tracking-tight">Report Tracking</h1></div><div class="flex items-center gap-space-xs shrink-0"><div class="relative flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfzqzUNkhZ5EJZ_EEGDCJepX_q_eur7TRKdgPfKtQSPENj30SfuDqhAmbtoh3FbGXlFxQf7vgRXk-QLH6izrgoutyC_nSkaVPdQr9ZAgSNvJgCABFbuLuW7fiUAUN3Y6r1_Ylgj64qySgfz7LFNIv9c7Ds-7sZ4NrgDXdu_uHzRYFdz8-4JQL1Xw0yk79-xzL_1SN04aE7XT_XtxC0G1tZb9_jALOfX6IAdLxVqXICObkkZ0hB4SJsWg"/></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-canvas-bg min-h-screen"><div class="flex flex-col w-full pb-10 space-y-space-md">
+<!-- Top Utility Context Bar (Share & Download PDF) -->
+<div class="flex items-center justify-between px-margin pt-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-subtle text-text-secondary font-mono-ticket text-mono-ticket">
+        LIVE TRACKING
+      </span>
+<span class="w-2 h-2 rounded-full bg-warning-bg animate-ping"></span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button aria-label="Share Report" class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-container-lowest text-text-primary shadow-sm active:scale-90 transition-all hover:bg-surface-subtle" id="shareReportBtn">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+<button aria-label="Download Official PDF Ticket" class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-container-lowest text-text-primary shadow-sm active:scale-90 transition-all hover:bg-surface-subtle" id="downloadPdfBtn">
+<span class="material-symbols-outlined text-[20px]">picture_as_pdf</span>
+</button>
+</div>
+</div>
+<!-- Ticket Header Hero Card -->
+<div class="mx-margin rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm relative overflow-hidden">
+<div class="absolute -right-8 -top-8 w-28 h-28 rounded-full bg-surface-container-high/40 blur-2xl pointer-events-none"></div>
+<div class="flex items-start justify-between gap-space-sm">
+<div class="space-y-1">
+<span class="text-text-muted font-label-sm text-label-sm tracking-wider uppercase">Municipal Grievance ID</span>
+<div class="font-mono-ticket text-headline-sm text-text-primary tracking-tight">NAG-2026-750001</div>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-warning-bg text-tertiary-container shadow-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm font-bold tracking-wider">IN PROGRESS</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm space-y-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">account_balance</span>
+<p class="font-label-lg text-label-lg text-text-primary font-bold">Nagpur Municipal Corporation</p>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary pl-6">Water Supply &amp; Pipeline Maintenance Dept</p>
+</div>
+<!-- Meta Details Strip -->
+<div class="mt-space-md pt-space-sm flex items-center justify-between bg-canvas-bg rounded-xl px-space-md py-2.5">
+<div class="flex flex-col">
+<span class="text-text-muted font-label-sm text-label-sm">REGISTERED</span>
+<span class="font-body-sm text-body-sm text-text-primary font-semibold">03 Oct 2026, 11:20 AM</span>
+</div>
+<div class="h-6 w-px bg-outline-variant/30"></div>
+<div class="flex flex-col items-end">
+<span class="text-text-muted font-label-sm text-label-sm">SEVERITY</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm font-bold text-emergency-red">
+<span class="material-symbols-outlined text-[14px]">flag</span> High Priority
+        </span>
+</div>
+</div>
+</div>
+<!-- Interactive Vertical Progress Stepper -->
+<div class="mx-margin rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-lg">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">timeline</span>
+<h2 class="font-headline-sm text-headline-sm text-text-primary">Civic Action Lifecycle</h2>
+</div>
+<span class="font-label-sm text-label-sm text-text-muted">Auto-refreshed</span>
+</div>
+<div class="relative pl-7 space-y-space-lg">
+<!-- Continuous Background Track Line -->
+<div class="absolute left-[13px] top-3 bottom-4 w-[2px] bg-surface-subtle"></div>
+<!-- Progress Bar Overlay (Emerald up to Work In Progress) -->
+<div class="absolute left-[13px] top-3 h-[68%] w-[2px] bg-secondary-fixed-dim transition-all duration-700"></div>
+<!-- Step 1: Completed -->
+<div class="relative flex flex-col group">
+<div class="absolute -left-7 top-0 w-7 h-7 rounded-full bg-success-bg flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">check</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg text-text-primary font-bold">Report Submitted</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-0.5">03 Oct, 11:20 AM • Registered via Urban Link Voice</p>
+</div>
+</div>
+<!-- Step 2: Completed -->
+<div class="relative flex flex-col group">
+<div class="absolute -left-7 top-0 w-7 h-7 rounded-full bg-success-bg flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">smart_toy</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg text-text-primary font-bold">AI Verified &amp; Categorized</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-0.5">03 Oct, 11:22 AM • Auto-triaged as Priority High</p>
+</div>
+</div>
+<!-- Step 3: Completed -->
+<div class="relative flex flex-col group">
+<div class="absolute -left-7 top-0 w-7 h-7 rounded-full bg-success-bg flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">assignment_ind</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg text-text-primary font-bold">Officer Assigned</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-0.5">03 Oct, 12:05 PM • Jr. Engineer S. K. Deshmukh dispatched</p>
+</div>
+</div>
+<!-- Step 4: Active / In Progress -->
+<div class="relative flex flex-col group">
+<div class="absolute -left-7 top-0 w-7 h-7 rounded-full bg-warning-bg flex items-center justify-center shadow-md animate-pulse">
+<div class="w-3 h-3 rounded-full bg-tertiary-container"></div>
+</div>
+<div class="bg-warning-bg/50 rounded-xl p-3 -mt-1 shadow-xs">
+<div class="flex items-center justify-between">
+<h3 class="font-label-lg text-label-lg text-tertiary-container font-bold">Work In Progress</h3>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-warning-bg text-tertiary-container uppercase">On Site</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-primary font-medium mt-1">
+            03 Oct, 01:15 PM • Excavation &amp; pipeline jetting crew on site
+          </p>
+<div class="mt-2 flex items-center gap-1.5 text-text-secondary text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-[15px] text-tertiary-container">engineering</span>
+<span>Estimated completion in ~4 hrs</span>
+</div>
+</div>
+</div>
+<!-- Step 5: Pending -->
+<div class="relative flex flex-col group opacity-65">
+<div class="absolute -left-7 top-0 w-7 h-7 rounded-full bg-surface-subtle flex items-center justify-center">
+<span class="material-symbols-outlined text-text-muted text-[15px]">pending</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg text-text-muted font-bold">Inspection &amp; Resolved</h3>
+<p class="font-body-sm text-body-sm text-text-muted mt-0.5">Est. 03 Oct, 06:00 PM • Quality check sign-off</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Assigned Municipal Field Officer Card -->
+<div class="mx-margin rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-sm">
+<span class="text-text-muted font-label-sm text-label-sm uppercase tracking-wider">Field Operative</span>
+<span class="inline-flex items-center gap-1 text-secondary font-label-sm text-label-sm font-bold bg-success-bg px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[13px]">verified</span> NMC Verified
+      </span>
+</div>
+<div class="flex items-center gap-space-md mt-space-xs">
+<div class="relative">
+<img class="w-14 h-14 rounded-2xl object-cover shadow-xs" data-alt="Close up warm professional portrait of an Indian municipal civil engineer wearing a high visibility safety vest and a white engineering hardhat with a kind focused expression under daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA97HMp-F8G4kdS-Mf_u8YdXj07k7eN5Rxf7Q7Cm3mEjKaeoLb8NzMKseGMF9zLmsd_EjwndbdXXl5-2LsXqvrrbShbkGcOmWHd9rksVa7sH4wa8GNjzIcl9mc53F7csaYfJoWijSsulv8gfKMkHVMaxJv5M5BkNT7qWBYqNQmPGn_-QFL_6OFapyTysg5hjvCmHeaJDAqT_hJng_QQEge5Y8jY63jsTUseXuqPe4nmBEnakjMriJURvg"/>
+<div class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-secondary-fixed-dim flex items-center justify-center">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+</div>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<h3 class="font-headline-sm text-headline-sm text-text-primary truncate">S. K. Deshmukh</h3>
+<p class="font-body-sm text-body-sm text-text-secondary truncate">Junior Engineer • Water Works Zone 2</p>
+<span class="font-label-sm text-label-sm text-text-muted mt-0.5">Crew #4 • Ward 12 (Dharampeth)</span>
+</div>
+</div>
+<!-- Quick Communication Buttons -->
+<div class="grid grid-cols-2 gap-space-sm mt-space-lg">
+<button class="flex items-center justify-center gap-2 py-2.5 px-space-md rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg font-bold shadow-xs active:scale-95 transition-all hover:bg-primary-dark" id="callOfficerBtn">
+<span class="material-symbols-outlined text-[18px]">phone</span>
+<span>Call Officer</span>
+</button>
+<button class="flex items-center justify-center gap-2 py-2.5 px-space-md rounded-xl bg-surface-subtle text-text-primary font-label-lg text-label-lg font-bold active:scale-95 transition-all hover:bg-surface-container-high" id="msgOfficerBtn">
+<span class="material-symbols-outlined text-[18px] text-primary">chat</span>
+<span>Message</span>
+</button>
+</div>
+</div>
+<!-- Location & Evidence Card -->
+<div class="mx-margin rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary">Incident Geo-Anchor</h3>
+<p class="font-body-sm text-body-sm text-text-secondary">West High Court Road, Dharampeth</p>
+</div>
+<span class="material-symbols-outlined text-primary text-[24px]">pin_drop</span>
+</div>
+<!-- Map Snapshot Container -->
+<div class="relative w-full h-44 rounded-xl overflow-hidden shadow-xs">
+<div class="w-full h-full bg-cover bg-center" data-location="West High Court Road, Dharampeth, Nagpur, India" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA2Yj90QA8jy_SA_2VC3PMpK1CJYr0Irf4KXzUr75idNncT9S0bFr0GZoZC0cVRUyd2bmTlIrypbHkAflsqOoVdjlbxO5dORf3ZtS0QOvdSKPQzdSTYiVVpH9KvBpQybG-1gojJFG4eeXsIs9pqnH9aFTGlatURNNSgdNAkeYzWau4JTotKGxfSA0XNYTu5gS5zzRc49wE7wdxVL8SDWSUcgzHHVpj804IlZlYMOlRj16wq26BOlnUWcQ')"></div>
+<!-- Overlay Repair Pin & Truck Badge -->
+<div class="absolute inset-0 bg-surface-tint/10 pointer-events-none flex items-center justify-center">
+<div class="flex items-center gap-2 bg-surface-container-lowest/95 backdrop-blur-md px-3 py-1.5 rounded-full shadow-md">
+<span class="material-symbols-outlined text-primary text-[18px]">local_shipping</span>
+<span class="font-label-sm text-label-sm text-text-primary font-bold">Crew Vehicle #MH-31-EQ-9041</span>
+</div>
+</div>
+<div class="absolute bottom-2 left-2 px-2 py-1 rounded bg-text-primary/70 text-on-primary text-[11px] font-mono-ticket">
+        21.1426° N, 79.0601° E
+      </div>
+</div>
+<!-- Citizen Attached Evidence -->
+<div class="pt-space-xs">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-text-secondary uppercase tracking-wider">Citizen Evidence Attached</span>
+<span class="font-label-sm text-label-sm text-text-muted">1 Photo</span>
+</div>
+<div class="flex items-center gap-space-md bg-canvas-bg p-space-sm rounded-xl">
+<img class="w-16 h-16 rounded-lg object-cover shadow-xs" data-alt="Realistic documentary photo of a high pressure clean water pipe burst gushing over an asphalt urban street in Dharampeth Nagpur with nearby residential buildings under morning sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdxbyt5Xi_6UkDQua2ORjlsesD3HF76MI0e4gat-XyM67Z-o7AMuRj9a71N9aOrtgy1qOTxajb9FcVEhOXbJok53kuHJrDs7COf1MrlXkaw6L8a_k9gy5wauX5123aDEWAn0_dSyaE3l_-5cjTaqrQv0LWjZ9ybub0XHO94GmAVqwDEH96b5w1jEDUS7vrsd_i_7ded2Qnm-0Vz9rtbkJwxckWP264W7WDI48-qcGs7f8uhq8GRtedMw"/>
+<div class="flex flex-col min-w-0">
+<p class="font-label-lg text-label-lg text-text-primary truncate font-bold">water_leakage_junction_03oct.jpg</p>
+<span class="font-body-sm text-body-sm text-text-secondary mt-0.5">Uploaded via voice prompt capture</span>
+<span class="font-label-sm text-label-sm text-text-muted">1.8 MB • Timestamped 11:19 AM</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Civic Action Sticky Dock -->
+<div class="px-margin pt-space-xs space-y-space-sm">
+<button class="w-full flex items-center justify-center gap-2 py-3 px-space-md rounded-2xl bg-primary text-on-primary font-label-lg text-label-lg font-bold shadow-md active:scale-[0.98] transition-all hover:bg-primary-dark" id="addNoteBtn">
+<span class="material-symbols-outlined text-[20px]">add_a_photo</span>
+<span>Add Additional Note / Photo</span>
+</button>
+<button class="w-full flex items-center justify-center gap-2 py-3 px-space-md rounded-2xl bg-surface-container-lowest text-emergency-red font-label-lg text-label-lg font-bold shadow-xs active:scale-[0.98] transition-all hover:bg-emergency-bg" id="escalateBtn">
+<span class="material-symbols-outlined text-[20px]">support_agent</span>
+<span>Call Support / Escalate Issue</span>
+</button>
+</div>
+<!-- Toast Notification Feedback Component -->
+<div class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-text-primary text-on-primary px-4 py-2.5 rounded-full text-body-sm font-label-lg shadow-xl opacity-0 pointer-events-none transition-all duration-300 z-50 flex items-center gap-2" id="toastNotification">
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed">check_circle</span>
+<span id="toastMessage">Action completed</span>
+</div>
+</div>
+<script>
+  (function initTicketTrackingInteractions() {
+    const toast = document.getElementById('toastNotification');
+    const toastMsg = document.getElementById('toastMessage');
+
+    function showToast(text) {
+      if (!toast || !toastMsg) return;
+      toastMsg.textContent = text;
+      toast.classList.remove('opacity-0', 'pointer-events-none');
+      toast.classList.add('opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('opacity-100');
+        toast.classList.add('opacity-0', 'pointer-events-none');
+      }, 2400);
+    }
+
+    document.getElementById('shareReportBtn')?.addEventListener('click', () => {
+      if (navigator.share) {
+        navigator.share({
+          title: 'NMC Report NAG-2026-750001',
+          text: 'Tracking municipal ticket NAG-2026-750001 (Water Supply Dept, Dharampeth)',
+          url: window.location.href,
+        }).catch(() => showToast('Share link copied to clipboard'));
+      } else {
+        showToast('Tracking link copied to clipboard');
+      }
+    });
+
+    document.getElementById('downloadPdfBtn')?.addEventListener('click', () => {
+      showToast('Generating official NMC receipt PDF...');
+    });
+
+    document.getElementById('callOfficerBtn')?.addEventListener('click', () => {
+      showToast('Connecting securely to Jr. Engineer S. K. Deshmukh...');
+    });
+
+    document.getElementById('msgOfficerBtn')?.addEventListener('click', () => {
+      showToast('Opening official field dispatch chat...');
+    });
+
+    document.getElementById('addNoteBtn')?.addEventListener('click', () => {
+      showToast('Opening camera & voice attachment...');
+    });
+
+    document.getElementById('escalateBtn')?.addEventListener('click', () => {
+      showToast('Connecting to NMC Civic Helpline 155304...');
+    });
+  })();
+</script></main></body></html>

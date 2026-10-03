@@ -7,20 +7,32 @@ import androidx.compose.ui.graphics.Color
 // Ported 1:1 from web globals.css ("Civic Horizon")
 // ════════════════════════════════════════════════════════
 
-// Civic Blue Accent
-val CivicBlue = Color(0xFF003D9B)
-val CivicBlueHover = Color(0xFF0052CC)
-val CivicBlueMuted = Color(0x14003D9B) // rgba(0, 61, 155, 0.08)
-val CivicBlueSubtle = Color(0x0A003D9B)
+// Civic Blue Accent & Stitch Primary Palette
+val CivicBlue = Color(0xFF004AC6)
+val CivicBlueHover = Color(0xFF003EA8)
+val CivicBlueMuted = Color(0x14004AC6)
+val CivicBlueSubtle = Color(0x0A004AC6)
 val CivicBlueDark = Color(0xFF4D8CF5)
 val CivicBlueDarkMuted = Color(0x1F4D8CF5)
 
+// Stitch Vibrant Civic Palette
+val StitchPrimary = Color(0xFF004AC6)
+val StitchPrimaryContainer = Color(0xFF2563EB)
+val StitchPrimaryDark = Color(0xFF1D4ED8)
+val StitchPrimaryFixed = Color(0xFFDBE1FF)
+val StitchSecondary = Color(0xFF006C49)
+val StitchSecondaryContainer = Color(0xFF6CF8BB)
+val StitchSecondaryFixedDim = Color(0xFF4EDEA3)
+val StitchSurfaceGlass = Color(0xF2FFFFFF)
+val StitchSurfaceSubtle = Color(0xFFF1F5F9)
+val StitchCanvasBg = Color(0xFFF8FAFC)
+
 // Canvas & Surfaces (Light)
-val CanvasLight = Color(0xFFF8F9FA)
+val CanvasLight = Color(0xFFF8FAFC)
 val Surface0Light = Color(0xFFFFFFFF)
-val Surface1Light = Color(0xFFF3F4F5)
-val Surface2Light = Color(0xFFEDEEEF)
-val Surface3Light = Color(0xFFE7E8E9)
+val Surface1Light = Color(0xFFF1F5F9)
+val Surface2Light = Color(0xFFEAEDFF)
+val Surface3Light = Color(0xFFDAE2FD)
 
 // Canvas & Surfaces (Dark)
 val CanvasDark = Color(0xFF0A0A0C)

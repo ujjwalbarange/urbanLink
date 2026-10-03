@@ -278,8 +278,9 @@ fun CitizenDrawerContent(
             contentAlignment = Alignment.Center
         ) {
             Text(
-                text = "Nagpur Connect v1.0 — AI Civic Response",
-                fontSize = 10.sp,
+                text = "Urban Link v1.0 — AI Civic Response",
+                fontSize = 11.sp,
+                fontWeight = FontWeight.Medium,
                 color = CivicTheme.colors.textTertiary
             )
         }

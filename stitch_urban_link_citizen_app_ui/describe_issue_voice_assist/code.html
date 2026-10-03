@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Space+Grotesk:wght@600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#F8FAFC;}body{overscroll-behavior:none;font-family:'Plus Jakarta Sans',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-error-container": "#93000a", "surface-container-high": "#e2e7ff", "text-secondary": "#64748B", "on-primary": "#ffffff", "on-primary-fixed": "#00174b", "primary-fixed-dim": "#b4c5ff", "tertiary-container": "#996100", "on-tertiary": "#ffffff", "on-tertiary-fixed": "#2a1700", "secondary-container": "#6cf8bb", "primary-fixed": "#dbe1ff", "on-secondary-fixed-variant": "#005236", "emergency-bg": "#FEF2F2", "warning-bg": "#FFFBEB", "on-tertiary-container": "#ffeedd", "surface-tint": "#0053db", "surface-bright": "#faf8ff", "on-secondary-container": "#00714d", "on-error": "#ffffff", "surface-container-low": "#f2f3ff", "text-primary": "#0F172A", "on-secondary-fixed": "#002113", "background": "#faf8ff", "secondary": "#006c49", "success-bg": "#ECFDF5", "on-primary-fixed-variant": "#003ea8", "emergency-red": "#EF4444", "surface-variant": "#dae2fd", "on-background": "#131b2e", "secondary-fixed": "#6ffbbe", "secondary-fixed-dim": "#4edea3", "on-surface-variant": "#434655", "text-muted": "#94A3B8", "emergency-border": "#FCA5A5", "outline": "#737686", "primary-dark": "#1D4ED8", "surface-subtle": "#F1F5F9", "surface-container": "#eaedff", "error": "#ba1a1a", "primary": "#004ac6", "glass-border": "rgba(226, 232, 240, 0.80)", "tertiary-fixed-dim": "#ffb95f", "surface-glass": "rgba(255, 255, 255, 0.88)", "surface": "#faf8ff", "primary-container": "#2563eb", "inverse-on-surface": "#eef0ff", "error-container": "#ffdad6", "surface-dim": "#d2d9f4", "on-tertiary-fixed-variant": "#653e00", "tertiary-fixed": "#ffddb8", "surface-container-highest": "#dae2fd", "inverse-surface": "#283044", "surface-container-lowest": "#ffffff", "tertiary": "#784b00", "on-primary-container": "#eeefff", "on-surface": "#131b2e", "canvas-bg": "#F8FAFC", "on-secondary": "#ffffff", "outline-variant": "#c3c6d7", "inverse-primary": "#b4c5ff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-sm": "0.5rem", "gutter-sm": "0.75rem", "gutter": "1rem", "margin": "1rem", "space-lg": "1.25rem", "space-2xl": "2.5rem", "space-md": "1rem", "margin-lg": "1.5rem", "space-xl": "1.75rem" }, fontFamily: { "display-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "mono-ticket": ["Space Grotesk"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "display-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"] }, fontSize: { "display-lg": ["34px", { "lineHeight": "40px", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "18px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "mono-ticket": ["13px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "30px", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }], "display-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "800" }], "headline-md": ["20px", { "lineHeight": "26px", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }] } } } };</script></head><body class="bg-canvas-bg text-on-surface min-h-screen flex flex-col antialiased selection:bg-primary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-glass backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm min-w-0"><button aria-label="Go back" class="w-11 h-11 -ml-1.5 flex items-center justify-center rounded-full text-text-primary active:scale-95 transition-transform hover:bg-surface-subtle" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Urban Link Logo" class="h-7 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1W6OtN14VeH0AyfB06lyLjGoXiKp-hX_EVZi0liuAc1Yq6YZwbPK_DtHIKPJUa4yxIzfuh8-axCYE0dSd5pYiIUmRDFIUatq_5vPyxP2uMq-oIJ7WVpezXvVFdil2EMeQ8r_jZPn5lJ5hJ0Ld-Dm_qr8n5lsoVOubBI3MWPfFypDgjckQUeDYLECv4d0vFywYsBMGJ--2cCEAFiKdySXHa7aBShxRvU5MVEs3IPGud7DV6u_E-h_liS7--d"/><h1 class="font-headline-sm text-headline-sm text-text-primary truncate tracking-tight">Describe Issue</h1></div><div class="flex items-center gap-space-xs shrink-0"><div class="relative flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfzqzUNkhZ5EJZ_EEGDCJepX_q_eur7TRKdgPfKtQSPENj30SfuDqhAmbtoh3FbGXlFxQf7vgRXk-QLH6izrgoutyC_nSkaVPdQr9ZAgSNvJgCABFbuLuW7fiUAUN3Y6r1_Ylgj64qySgfz7LFNIv9c7Ds-7sZ4NrgDXdu_uHzRYFdz8-4JQL1Xw0yk79-xzL_1SN04aE7XT_XtxC0G1tZb9_jALOfX6IAdLxVqXICObkkZ0hB4SJsWg"/></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-canvas-bg min-h-screen"><div class="flex flex-col w-full px-margin pb-space-2xl space-y-space-lg">
+<!-- Progress Tracker & Selected Department Sub-bar -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col space-y-0.5">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Step 2 of 3</span>
+<span class="font-headline-sm text-headline-sm text-text-primary tracking-tight">Describe Issue</span>
+</div>
+<!-- Department Badge / Switcher -->
+<button aria-label="Change Department" class="flex items-center gap-1.5 px-3 py-1.5 bg-surface-container rounded-full shadow-sm active:scale-95 transition-transform" type="button">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-md text-label-md text-text-primary">Water Supply</span>
+<span class="material-symbols-outlined text-[16px] text-text-secondary">edit</span>
+</button>
+</div>
+<!-- Warm Conversational Intro -->
+<div class="flex flex-col space-y-1">
+<h2 class="font-headline-md text-headline-md text-text-primary">Describe the civic issue</h2>
+<p class="font-body-md text-body-md text-text-secondary">Speak in your native language or type. Our AI assistant will automatically structure your report.</p>
+</div>
+<!-- Primary Voice Hero Module (Active Transcribing Experience) -->
+<div class="relative overflow-hidden rounded-2xl bg-surface-container-lowest shadow-[0_12px_32px_-4px_rgba(15,23,42,0.08),0_4px_8px_-2px_rgba(15,23,42,0.03)] p-gutter">
+<!-- Subtle Ambient Glow Orbs -->
+<div class="absolute -top-12 -right-12 w-44 h-44 rounded-full bg-primary-fixed blur-3xl opacity-60 pointer-events-none"></div>
+<div class="absolute -bottom-10 -left-10 w-36 h-36 rounded-full bg-secondary-fixed blur-2xl opacity-40 pointer-events-none"></div>
+<div class="relative flex flex-col space-y-space-md">
+<!-- Status pill banner -->
+<div class="flex items-center justify-between">
+<div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-error-container/40">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+<span class="font-label-sm text-label-sm text-error">Listening &amp; Transcribing</span>
+</div>
+<span class="font-label-sm text-label-sm text-text-secondary">Marathi • Hindi • English</span>
+</div>
+<!-- Live Dynamic Audio Waveform Visualizer -->
+<div class="h-14 w-full flex items-center justify-center gap-1 px-2 py-1 bg-surface-subtle/70 rounded-xl overflow-hidden" id="waveform-container">
+<!-- Bars with varying heights and animations -->
+<span class="w-1.5 bg-primary rounded-full transition-all duration-150 h-3 animate-[pulse_0.8s_ease-in-out_infinite]"></span>
+<span class="w-1.5 bg-primary rounded-full transition-all duration-150 h-6 animate-[pulse_0.7s_ease-in-out_infinite_0.1s]"></span>
+<span class="w-1.5 bg-primary-container rounded-full transition-all duration-150 h-10 animate-[pulse_0.9s_ease-in-out_infinite_0.2s]"></span>
+<span class="w-1.5 bg-primary rounded-full transition-all duration-150 h-5 animate-[pulse_0.6s_ease-in-out_infinite_0.3s]"></span>
+<span class="w-1.5 bg-primary-container rounded-full transition-all duration-150 h-11 animate-[pulse_0.85s_ease-in-out_infinite_0.15s]"></span>
+<span class="w-1.5 bg-secondary rounded-full transition-all duration-150 h-7 animate-[pulse_0.65s_ease-in-out_infinite_0.25s]"></span>
+<span class="w-1.5 bg-primary rounded-full transition-all duration-150 h-12 animate-[pulse_0.95s_ease-in-out_infinite_0.05s]"></span>
+<span class="w-1.5 bg-primary-container rounded-full transition-all duration-150 h-8 animate-[pulse_0.75s_ease-in-out_infinite_0.35s]"></span>
+<span class="w-1.5 bg-primary rounded-full transition-all duration-150 h-4 animate-[pulse_0.8s_ease-in-out_infinite_0.1s]"></span>
+<span class="w-1.5 bg-secondary rounded-full transition-all duration-150 h-10 animate-[pulse_0.7s_ease-in-out_infinite_0.2s]"></span>
+<span class="w-1.5 bg-primary rounded-full transition-all duration-150 h-5 animate-[pulse_0.6s_ease-in-out_infinite_0.4s]"></span>
+</div>
+<!-- Tactile 3D Microphone Interaction Button with concentric pulsing ripples -->
+<div class="relative flex items-center justify-center py-2">
+<div class="absolute w-24 h-24 rounded-full bg-primary/10 animate-ping opacity-60"></div>
+<div class="absolute w-20 h-20 rounded-full bg-primary/15 animate-pulse"></div>
+<div class="relative p-1.5 rounded-full bg-surface-subtle shadow-inner">
+<button aria-label="Microphone active. Tap to pause recording." class="w-16 h-16 rounded-full bg-gradient-to-b from-primary-container to-primary text-on-primary shadow-[0_8px_20px_rgba(37,99,235,0.4),inset_0_2px_2px_rgba(255,255,255,0.4)] flex items-center justify-center active:scale-95 transition-transform" id="micToggleBtn" type="button">
+<span class="material-symbols-outlined text-[30px]" style="font-variation-settings: 'FILL' 1;">mic</span>
+</button>
+</div>
+</div>
+<!-- Live Transcript Speech Bubble (Original Speech) -->
+<div class="relative p-3.5 rounded-xl bg-surface-container-low text-text-primary flex flex-col space-y-1.5">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">record_voice_over</span>
+<span class="font-label-sm text-label-sm text-text-secondary">DETECTED: MARATHI (मराठी)</span>
+</div>
+<p class="font-body-md text-body-md text-text-primary leading-relaxed font-semibold">
+          “माझ्या भागात गेल्या दोन दिवसांपासून मुख्य पाईपलाईन फुटल्याने रस्त्यावर पाणी साचले आहे आणि पिण्याचे पाणी गढूळ येत आहे. कृपया त्वरित दुरुस्ती करावी.”
+        </p>
+</div>
+<!-- Real-Time AI Auto-Translation Preview Accordion -->
+<div class="flex flex-col p-3 rounded-xl bg-success-bg text-secondary space-y-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="font-label-sm text-label-sm tracking-wide uppercase">AI English Structuring</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+          “Main water pipeline burst for past two days causing severe street waterlogging and contaminated turbid drinking water. Requesting urgent repair.”
+        </p>
+</div>
+</div>
+</div>
+<!-- Manual Input Fallback Textarea -->
+<div class="flex flex-col space-y-2">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-text-primary flex items-center gap-1.5" for="manualDescription">
+<span class="material-symbols-outlined text-text-secondary text-[18px]">edit_note</span>
+        Or edit structured text manually
+      </label>
+<span class="font-mono-ticket text-mono-ticket text-text-muted" id="charCounter">142 / 500</span>
+</div>
+<div class="relative w-full rounded-2xl bg-surface-container-lowest shadow-sm focus-within:shadow-md transition-shadow">
+<textarea class="w-full p-3.5 bg-transparent rounded-2xl font-body-md text-body-md text-text-primary placeholder:text-text-muted focus:outline-none resize-none" id="manualDescription" maxlength="500" placeholder="Tell us what happened, where, and when..." rows="3">Main water pipeline burst for past two days causing severe street waterlogging and contaminated turbid drinking water. Requesting urgent repair.</textarea>
+<!-- Quick micro-actions inside textarea footer -->
+<div class="flex items-center justify-between px-3.5 pb-2.5 pt-1">
+<div class="flex items-center gap-1 text-text-secondary">
+<span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-sm text-label-sm text-secondary">Verified by Civic AI</span>
+</div>
+<button class="font-label-sm text-label-sm text-primary hover:underline px-1 py-0.5" onclick="document.getElementById('manualDescription').value = '';" type="button">
+          Clear
+        </button>
+</div>
+</div>
+</div>
+<!-- Contextual Metadata: Evidence, Location & Urgency -->
+<div class="flex flex-col space-y-2">
+<span class="font-label-sm text-label-sm text-text-secondary uppercase tracking-wider">Attached Verification Data</span>
+<div class="flex flex-col space-y-2">
+<!-- 1. Media Thumbnail Attachment -->
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative w-12 h-12 rounded-lg overflow-hidden bg-surface-subtle shrink-0">
+<img class="w-full h-full object-cover" data-alt="A focused high-angle daytime photograph showing clean water gushing from a cracked asphalt seam on an Indian suburban street with concrete gutters and a low sidewalk curb" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4ayaJqQqlnJd6US7O6ozEp3WBNvEOQVOpIqTxSrY7LQsj9vyTY3-RK5bOF0zOpze38o8fxPL8Ld-1vpWtChlYSR5zRzR8RFCzMwWq8SYNPQXXBThGOH6lLOeOJivZEygOMjq5I_YdhTI1YfySSnnGi-qwDcSR2_6KZalDaapBJX39HFUaP8KmIrG-vl5cxGkVKBywCYdTAX2zauH6YjU2q0Zase2FMqJHrxzuY-Twr50tJStOhqjVHw"/>
+<div class="absolute inset-0 bg-text-primary/10"></div>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-text-primary truncate">pipeline_leak.jpg</span>
+<span class="font-body-sm text-body-sm text-text-secondary">Geo-tagged photo (2.4 MB)</span>
+</div>
+</div>
+<button aria-label="Remove attachment" class="w-8 h-8 rounded-full flex items-center justify-center text-text-secondary hover:bg-surface-subtle active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- 2. Location Card -->
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[22px]">location_on</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-text-primary truncate">West High Court Rd, Dharampeth</span>
+<div class="flex items-center gap-1.5">
+<span class="font-mono-ticket text-mono-ticket text-secondary bg-success-bg px-1.5 py-0.5 rounded">GPS ±3m</span>
+<span class="font-body-sm text-body-sm text-text-secondary">• Ward 24</span>
+</div>
+</div>
+</div>
+<button aria-label="Adjust location on map" class="text-primary p-1 rounded-full hover:bg-surface-subtle active:scale-90" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+<!-- 3. Severity / Priority Level -->
+<div class="flex items-center justify-between p-3 rounded-xl bg-emergency-bg shadow-sm">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-lg bg-emergency-border/30 flex items-center justify-center shrink-0 text-emergency-red">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">flag</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-text-primary">High Priority — Flooding</span>
+<span class="font-body-sm text-body-sm text-text-secondary">Affecting vehicular passage &amp; drinking supply</span>
+</div>
+</div>
+<button aria-label="Adjust priority rating" class="text-text-secondary p-1 rounded-full hover:bg-surface-subtle active:scale-90" type="button">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Primary Sticky/Bottom Action Dock -->
+<div class="pt-space-sm flex flex-col space-y-2">
+<button class="w-full h-14 rounded-2xl bg-gradient-to-r from-primary to-primary-dark text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-[0_4px_16px_rgba(37,99,235,0.35),inset_0_1px_0_rgba(255,255,255,0.25)] active:scale-[0.98] transition-transform" type="button">
+<span>Review Report</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<p class="text-center font-body-sm text-body-sm text-text-muted">
+      Urban Link automatically removes sensitive private data before dispatching to ward engineers.
+    </p>
+</div>
+</div>
+<script>
+  (function() {
+    const micBtn = document.getElementById('micToggleBtn');
+    const textarea = document.getElementById('manualDescription');
+    const counter = document.getElementById('charCounter');
+    let isRecording = true;
+
+    if (micBtn) {
+      micBtn.addEventListener('click', function() {
+        isRecording = !isRecording;
+        if (!isRecording) {
+          micBtn.classList.remove('from-primary-container', 'to-primary');
+          micBtn.classList.add('from-text-secondary', 'to-text-primary');
+          micBtn.setAttribute('aria-label', 'Microphone paused. Tap to start speaking.');
+        } else {
+          micBtn.classList.remove('from-text-secondary', 'to-text-primary');
+          micBtn.classList.add('from-primary-container', 'to-primary');
+          micBtn.setAttribute('aria-label', 'Microphone active. Tap to pause recording.');
+        }
+      });
+    }
+
+    if (textarea && counter) {
+      textarea.addEventListener('input', function() {
+        counter.textContent = textarea.value.length + ' / 500';
+      });
+    }
+  })();
+</script></main></body></html>

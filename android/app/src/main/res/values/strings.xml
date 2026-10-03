@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Nagpur Connect</string>
+    <string name="app_name">Urban Link</string>
+    <string name="tagline">AI-Powered Civic Response</string>
+    <string name="city_label">Nagpur NMC</string>
 </resources>

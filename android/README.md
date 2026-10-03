@@ -1,12 +1,43 @@
-# 🏛️ Nagpur Connect — Citizen Android App (Kotlin & Jetpack Compose)
+# 🏛️ Urban Link — Citizen Android App (Kotlin & Jetpack Compose)
 
-This is the standalone native **Citizen-Only Android mobile app** for Nagpur Connect, built using **Kotlin** and **Jetpack Compose**. It replicates the web citizen dashboard UI, design tokens, animations, and state machine 1:1 while connecting directly to the Nagpur Connect API.
+This is the standalone native **Citizen-Only Android mobile app** for **Urban Link**, built using **Kotlin** and **Jetpack Compose** with the Google Stitch civic mobile design system. It replicates the Stitch visual architecture, layout, glassmorphic cards, typography, animations, and civic reporting state machine while connecting directly to the Urban Link backend.
 
 ---
 
-## 🎨 Faithful 1:1 Interface Replication
-- **Dual-Theme Design System**: Exact Civic Horizon design tokens ported from web `globals.css` (Civic Blue `#003D9B`, Surface & Canvas shades, Critical Red, High Orange, Medium Amber, and Low Green).
-- **Home & Department Grid**: 12 civic departments with official icons, descriptions, and active reports list.
+## 🎨 Faithful Stitch Interface Implementation
+- **Stitch Design System Tokens**: Glassmorphic surfaces (`#F8FAFC`, glass borders, rounded corners `16-24dp`), Stitch Primary Blue (`#004AC6`), Primary Container (`#2563EB`), Emerald Accent (`#006C49`, `#ECFDF5`), Emergency Red (`#EF4444`, `#FEF2F2`).
+- **Urban Link Header**: Municipal brand mark, Nagpur NMC municipality chip with live pulse, notifications bell with count, and citizen avatar.
+- **Home Dashboard**:
+  - Live civic context: Location pill (`Nagpur • Ward 14 Dharampeth`) and `Civic Grid Normal` status.
+  - Personalized citizen greeting with verified citizen badge.
+  - Civic Hero Card with 1-tap Report Issue & Speak actions.
+  - Quick Navigation 2x2 grid (Report Issue, My Reports, Track ID, Emergency 112).
+  - Performance Stats Bar (4,821 Resolved, 4.2h Avg Response, 94% Resolution Rate).
+  - Active report cards with mono ticket IDs, live pulse chips, and progress bars.
+  - Full 2-column NMC department selection grid.
+  - Floating bottom voice bar with multilingual prompt.
+- **Stitch Bottom Navigation Bar**: Seamless navigation between Home, Reports, Voice, and SOS 112.
+- **Voice Assist & Composing Screen**:
+  - Step 2 of 3 progress tracker with department switcher.
+  - Multilingual voice hero module (Marathi, Hindi, English).
+  - Dynamic audio waveform visualizer bars and 3D tactile pulsing mic.
+  - Real-time speech transcript bubble with language detection.
+  - AI translation & structuring preview ("Verified by Civic AI").
+  - Camera & photo evidence uploader with thumbnail management.
+  - GPS ward-level location detection.
+- **Review & Submit Screen**:
+  - Step 3 of 3 review layout.
+  - AI Civic Analysis card with match rate, routed division, and estimated response.
+  - Authority, citizen statement, and location landmark cards.
+- **My Reports History Screen**:
+  - Search bar with instant ticket ID, street, or department query.
+  - Horizontal filter tabs: All, Active, In Progress, Resolved.
+  - Stitch-styled cards with status badges and one-tap tracking.
+- **Live Report Tracking Timeline**:
+  - Grievance ID hero card with official status pill.
+  - PDF download and share actions.
+  - 5-stage vertical Civic Action Lifecycle stepper with real-time updates.
+- **Emergency Hub**: Direct 1-tap dial action to 112 (National Emergency), 101 (Fire), 108 (Ambulance), and 1078 (Disaster Management).
 - **Floating Compose Bar**: Bottom quick input bar with "Describe your problem..." and circular blue microphone button.
 - **10-Stage Reporting State Machine**:
   1. `Home` ➔ Department selection or direct voice/text draft.

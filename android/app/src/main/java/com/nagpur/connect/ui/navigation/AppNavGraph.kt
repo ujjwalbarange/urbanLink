@@ -34,6 +34,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
+import com.nagpur.connect.ui.components.CitizenBottomNav
 import com.nagpur.connect.ui.components.CitizenDrawerContent
 import com.nagpur.connect.ui.components.CitizenTopAppBar
 import com.nagpur.connect.ui.screens.emergency.EmergencyHubScreen
@@ -105,6 +106,44 @@ fun AppNavGraph(
                     }
                 )
             },
+            bottomBar = {
+                val showBottomNav = (currentRoute == Screen.Home.route && currentView is DashboardUiView.Home) ||
+                        currentRoute == Screen.MyReports.route ||
+                        currentRoute == Screen.Emergency.route
+                if (showBottomNav) {
+                    CitizenBottomNav(
+                        currentRoute = currentRoute,
+                        onNavigateHome = {
+                            reportViewModel.goHome()
+                            navController.navigate(Screen.Home.route) {
+                                popUpTo(Screen.Home.route) { inclusive = false }
+                                launchSingleTop = true
+                            }
+                        },
+                        onNavigateReports = {
+                            navController.navigate(Screen.MyReports.route) {
+                                popUpTo(Screen.Home.route) { saveState = true }
+                                launchSingleTop = true
+                                restoreState = true
+                            }
+                        },
+                        onStartVoice = {
+                            navController.navigate(Screen.Home.route) {
+                                popUpTo(Screen.Home.route) { inclusive = false }
+                                launchSingleTop = true
+                            }
+                            reportViewModel.startComposing(source = "voice")
+                        },
+                        onNavigateEmergency = {
+                            navController.navigate(Screen.Emergency.route) {
+                                popUpTo(Screen.Home.route) { saveState = true }
+                                launchSingleTop = true
+                                restoreState = true
+                            }
+                        }
+                    )
+                }
+            },
             containerColor = CivicTheme.colors.canvas
         ) { paddingValues ->
             Box(
@@ -172,6 +211,12 @@ fun AppNavGraph(
                                         },
                                         onViewAllReports = {
                                             navController.navigate(Screen.MyReports.route)
+                                        },
+                                        onNavigateTrackId = {
+                                            navController.navigate(Screen.TrackIncident.createRoute(null))
+                                        },
+                                        onNavigateEmergency = {
+                                            navController.navigate(Screen.Emergency.route)
                                         }
                                     )
                                 }
